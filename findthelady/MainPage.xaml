@@ -1,0 +1,301 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="findthelady.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="728" d:DesignHeight="480"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape">
+	<phone:PhoneApplicationPage.Resources>
+		<Storyboard x:Name="anim_Card1Show">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="Card1Back">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="90"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="Card1Front">
+				<EasingDoubleKeyFrame KeyTime="0" Value="-90"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-90"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="anim_Card1Hide">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="Card1Back">
+				<EasingDoubleKeyFrame KeyTime="0" Value="90"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="90"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="Card1Front">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-90"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+				<Storyboard x:Name="anim_Card2Show">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="Card2Back">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="90"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="Card2Front">
+				<EasingDoubleKeyFrame KeyTime="0" Value="-90"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-90"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="anim_Card2Hide">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="Card2Back">
+				<EasingDoubleKeyFrame KeyTime="0" Value="90"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="90"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="Card2Front">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-90"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="anim_Card3Show">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="Card3Back">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="90"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="Card3Front">
+				<EasingDoubleKeyFrame KeyTime="0" Value="-90"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-90"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="anim_Card3Hide">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="Card3Back">
+				<EasingDoubleKeyFrame KeyTime="0" Value="90"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="90"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="Card3Front">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-90"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="anim_ShuffleButtonRemove">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="btnRoll">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<BackEase EasingMode="EaseIn" Amplitude="0.5"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="btnRoll">
+				<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<BackEase EasingMode="EaseIn" Amplitude="0.5"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="btnRoll">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="158">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<BackEase EasingMode="EaseIn" Amplitude="0.5"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="anim_ShuffleButtonShow">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="btnRoll">
+				<SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<BackEase EasingMode="EaseOut" Amplitude="0.5"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="btnRoll">
+				<SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<BackEase EasingMode="EaseOut" Amplitude="0.5"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="btnRoll">
+				<EasingDoubleKeyFrame KeyTime="0" Value="135"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<BackEase EasingMode="EaseOut" Amplitude="0.5"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</phone:PhoneApplicationPage.Resources>
+    <Grid x:Name="LayoutRoot">
+    	<VisualStateManager.VisualStateGroups>
+    		<VisualStateGroup x:Name="ScreenTransitions">
+    			<VisualStateGroup.Transitions>
+    				<VisualTransition GeneratedDuration="0:0:0.6"/>
+    				<VisualTransition From="InGame" GeneratedDuration="0:0:0.6" To="Welcome">
+    					<VisualTransition.GeneratedEasingFunction>
+    						<BackEase EasingMode="EaseIn" Amplitude="1"/>
+    					</VisualTransition.GeneratedEasingFunction>
+    				</VisualTransition>
+    				<VisualTransition From="Welcome" GeneratedDuration="0:0:0.7" To="How_To">
+    					<VisualTransition.GeneratedEasingFunction>
+    						<BounceEase EasingMode="EaseOut" Bounces="2" Bounciness="5"/>
+    					</VisualTransition.GeneratedEasingFunction>
+    				</VisualTransition>
+    				<VisualTransition From="Welcome" GeneratedDuration="0:0:0.6" To="InGame">
+    					<VisualTransition.GeneratedEasingFunction>
+    						<BackEase EasingMode="EaseOut"/>
+    					</VisualTransition.GeneratedEasingFunction>
+    				</VisualTransition>
+    				<VisualTransition From="How_To" GeneratedDuration="0:0:0.6" To="Welcome">
+    					<VisualTransition.GeneratedEasingFunction>
+    						<CircleEase EasingMode="EaseIn"/>
+    					</VisualTransition.GeneratedEasingFunction>
+    				</VisualTransition>
+    			</VisualStateGroup.Transitions>
+    			<VisualState x:Name="Welcome">
+    				<Storyboard>
+    					<DoubleAnimation Duration="0" To="104" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationX)" Storyboard.TargetName="CardCanvas" d:IsOptimized="True"/>
+    				</Storyboard>
+    			</VisualState>
+    			<VisualState x:Name="InGame"/>
+    			<VisualState x:Name="How_To">
+    				<Storyboard>
+    					<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="grid" d:IsOptimized="True"/>
+    					<DoubleAnimation Duration="0" To="104" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationX)" Storyboard.TargetName="CardCanvas" d:IsOptimized="True"/>
+    				</Storyboard>
+    			</VisualState>
+    		</VisualStateGroup>
+    		<VisualStateGroup x:Name="Messages">
+    			<VisualStateGroup.Transitions>
+    				<VisualTransition GeneratedDuration="0:0:0.3"/>
+    			</VisualStateGroup.Transitions>
+    			<VisualState x:Name="Wrong">
+    				<Storyboard>
+    					<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock" d:IsOptimized="True"/>
+    				</Storyboard>
+    			</VisualState>
+    			<VisualState x:Name="Right">
+    				<Storyboard>
+    					<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="txtSuccessMessage" d:IsOptimized="True"/>
+    				</Storyboard>
+    			</VisualState>
+    			<VisualState x:Name="Ready">
+    				<Storyboard>
+    					<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock2" d:IsOptimized="True"/>
+    				</Storyboard>
+    			</VisualState>
+    			<VisualState x:Name="Shuffling">
+    				<Storyboard>
+    					<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock3" d:IsOptimized="True"/>
+    				</Storyboard>
+    			</VisualState>
+    		</VisualStateGroup>
+    	</VisualStateManager.VisualStateGroups>
+		<Grid x:Name="WelcomeGrid" Background="{StaticResource PhoneBackgroundBrush}">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="0.767*"/>
+				<RowDefinition Height="0.233*"/>
+			</Grid.RowDefinitions>
+			<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Find The Lady!" VerticalAlignment="Top" FontSize="64" Margin="0,25,0,0"/>
+			<Image Source="images/clubs-q-150.png" Stretch="Fill" Margin="113,140,0,13" HorizontalAlignment="Left" Width="150" Height="215"/>
+			<Button x:Name="btnStartGame" Content="Amateur " Margin="276,131,284,118" Width="240"/>
+			<Button x:Name="btnStartGame_Expert" Content="Expert" Margin="276,0,284,4" VerticalAlignment="Bottom" Width="240" Height="114" d:LayoutOverrides="VerticalAlignment"/>
+			<Button x:Name="btnHowto" Content="How to&#xd;&#xa;play?" Margin="0,131,128,4" Width="156" HorizontalAlignment="Right"/>
+			<StackPanel x:Name="ScoreList" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Margin="0,0,0,5" Visibility="Collapsed">
+				<TextBlock TextWrapping="Wrap" Text="Highest score so far..." FontSize="16" d:LayoutOverrides="Width" HorizontalAlignment="Center" Opacity="0.7"/>
+				<TextBlock x:Name="txtHighestScore_Amateur" TextWrapping="Wrap" Text="20 in Amateur Level" FontSize="16" HorizontalAlignment="Center"/>
+				<TextBlock x:Name="txtHighestScore_Expert" TextWrapping="Wrap" Text="20 in Expert Level" FontSize="16" HorizontalAlignment="Center"/>
+			</StackPanel>
+		</Grid>
+		<Canvas x:Name="CardCanvas" Background="{StaticResource PhoneBackgroundBrush}">
+			<Canvas.Projection>
+				<PlaneProjection CenterOfRotationY="0"/>
+			</Canvas.Projection>
+			<Grid Height="27" Canvas.Left="86" Canvas.Top="36" Width="315">
+				<TextBlock x:Name="textBlock2" TextWrapping="Wrap" Text="Time to find the lady!" d:LayoutOverrides="Width, Height" Opacity="0"/>
+				<TextBlock x:Name="textBlock3" TextWrapping="Wrap" Text="Shuffling..." d:LayoutOverrides="Width, Height" Opacity="0"/>
+				<TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="WRONG PICK!" d:LayoutOverrides="Width, Height" Foreground="#FFFF4545" Opacity="0"/>
+				<TextBlock x:Name="txtSuccessMessage" TextWrapping="Wrap" Text="YAAAAAY!" Foreground="White" d:LayoutOverrides="Width, Height" Opacity="0"/>
+			</Grid>
+			<Button x:Name="btnRoll" Content="Shuffle!" Width="226" Height="90" Canvas.Left="288" Canvas.Top="359" RenderTransformOrigin="0.5,0.5">
+				<Button.RenderTransform>
+					<CompositeTransform/>
+				</Button.RenderTransform>
+			</Button>
+ 
+			<Canvas Background="{StaticResource PhoneBackgroundBrush}" Height="480">
+				<Grid x:Name="Card1Grid" Height="215" Canvas.Left="87" Canvas.Top="100" Width="150" Background="Transparent">
+					<Image x:Name="Card1Front" Height="215" Source="images/clubs-a-150.png" Stretch="Fill" VerticalAlignment="Center">
+						<Image.Projection>
+							<PlaneProjection/>
+						</Image.Projection>
+					</Image>
+					<Image x:Name="Card1Back" Height="215" Source="images/back-blue-150-4.png" Stretch="Fill" Width="150" VerticalAlignment="Center" HorizontalAlignment="Right">
+						<Image.Projection>
+							<PlaneProjection/>
+						</Image.Projection>
+					</Image>
+				</Grid>
+				<Grid x:Name="Card2Grid" Height="215" Canvas.Left="324" Canvas.Top="100" Width="150" Background="Transparent">
+					<Image x:Name="Card2Front" Height="215" Source="images/clubs-q-150.png" Stretch="Fill" VerticalAlignment="Center">
+						<Image.Projection>
+							<PlaneProjection/>
+						</Image.Projection>
+					</Image>
+					<Image x:Name="Card2Back" Height="215" Source="images/back-blue-150-4.png" Stretch="Fill" Width="150" VerticalAlignment="Center" HorizontalAlignment="Right">
+						<Image.Projection>
+							<PlaneProjection/>
+						</Image.Projection>
+					</Image>
+				</Grid>
+				<Grid x:Name="Card3Grid" Height="215" Canvas.Left="561" Canvas.Top="100" Width="150" Background="Transparent">
+					<Image x:Name="Card3Front" Source="images/spades-a-150.png" Stretch="Fill" Height="215" VerticalAlignment="Center">
+						<Image.Projection>
+							<PlaneProjection/>
+						</Image.Projection>
+					</Image>
+					<Image x:Name="Card3Back" Source="images/back-blue-150-4.png" Stretch="Fill" Width="150" Height="215" VerticalAlignment="Center" HorizontalAlignment="Right">
+						<Image.Projection>
+							<PlaneProjection/>
+						</Image.Projection>
+					</Image>
+				</Grid>
+			</Canvas>
+			<Grid Height="27" Canvas.Left="442" Canvas.Top="36" Width="266">
+				<StackPanel Orientation="Horizontal" d:LayoutOverrides="Width" HorizontalAlignment="Right">
+					<TextBlock TextWrapping="Wrap" Text="Score:" d:LayoutOverrides="Height" Opacity="0.8" HorizontalAlignment="Right"/>
+					<TextBlock x:Name="txtScore" TextWrapping="Wrap" Text="0" d:LayoutOverrides="Height" Margin="5,0,0,0" HorizontalAlignment="Right"/>
+				</StackPanel>
+			</Grid>
+        </Canvas>
+		<Grid x:Name="grid" RenderTransformOrigin="0.5,0.5">
+			<Grid.RenderTransform>
+				<CompositeTransform TranslateY="484"/>
+			</Grid.RenderTransform>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="0.277*"/>
+				<RowDefinition Height="0.723*"/>
+			</Grid.RowDefinitions>
+			<Rectangle Fill="{StaticResource PhoneContrastBackgroundBrush}" Grid.Row="1"/>
+			<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Margin="100,0,100,20" Grid.Row="1" Foreground="{StaticResource PhoneBackgroundBrush}"><Run Text="All you need to do is to find the lady. Shuffle the cards and try to track the lady. As many ladies you find as happy you will be ... I hope :) "/><LineBreak/><Run/><LineBreak/><Run Text="Some interesting updates and surprises are on the way..."/></TextBlock>
+		</Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>
